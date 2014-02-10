@@ -1,0 +1,156 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  background: none #090909;
+  position: relative;
+}
+
+figure, section {
+
+  &:before, &:after {
+    content: "";
+    display: block;
+    position: absolute;
+  }
+
+}
+
+figure {
+
+  width: 212px;
+  height: 126px;
+  background-color: #2b2b2b;
+  position: absolute;
+  left: 50%;
+  top: 47%;
+  margin: -63px 0 0 -106px;
+  border-radius: 3px;
+
+  &:before, &:after {
+    height: 42px;
+    width: 0;
+    bottom: -38px;
+    z-index: 15;
+    border-top: solid 18px transparent;
+    border-bottom: solid 18px transparent;
+  }
+
+  &:before {
+    left: 35px;
+    border-right: solid 31px #000;
+    border-left: none;
+  }
+
+  &:after {
+    right: 35px;
+    border-right: none;
+    border-left: solid 31px #000;
+  }
+
+}
+
+section {
+
+  &:before, &:after {
+    -webkit-transform: rotate(150deg) skew(30deg);
+  }
+
+  &:nth-child(1) {
+
+    &:before {
+      height: 108px;
+      width: 124px;
+      background-color: #3a3a3a;
+      left: 50%;
+      margin-left: -62px;
+      top: -53px;
+      border-radius: 4px 0 4px 3px;
+    }
+
+    &:after {
+      height: 108px;
+      width: 124px;
+      background-color: #222;
+      left: 50%;
+      margin-left: -62px;
+      bottom: -53px;
+      border-radius: 4px 3px 4px 0;
+    }
+
+  }
+
+  &:nth-child(2) {
+
+    width: 142px;
+    height: 86px;
+    border-radius: 3px;
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    left: 50%;
+    margin: -43px 0 0 -71px;
+    display: block;
+    background-color: #0a0a0a;
+
+    &:before {
+      height: 72px;
+      width: 84px;
+      background-color: #1a1a1a;
+      left: 50%;
+      margin-left: -42px;
+      top: -35px;
+      border-radius: 4px 0 4px 3px;
+    }
+
+    &:after {
+      height: 72px;
+      width: 84px;
+      background-color: #000000;
+      left: 50%;
+      margin-left: -42px;
+      bottom: -35px;
+      border-radius: 4px 3px 4px 0;
+    }
+
+  }
+
+  &:nth-child(3) {
+
+    width: 80px;
+    height: 52px;
+    border-radius: 3px;
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    margin: -26px 0 0 -40px;
+    display: block;
+    background-color: #2b2b2b;
+
+    &:before {
+      height: 42px;
+      width: 48px;
+      background-color: #3a3a3a;
+      left: 50%;
+      margin-left: -24px;
+      top: -19px;
+      border-radius: 4px 0 4px 2px;
+    }
+
+    &:after {
+      height: 42px;
+      width: 48px;
+      background-color: #222222;
+      left: 50%;
+      margin-left: -24px;
+      bottom: -19px;
+      border-radius: 4px 2px 4px 0;
+    }
+
+  }
+
+}
